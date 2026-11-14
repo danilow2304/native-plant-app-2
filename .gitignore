@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+server/data/journal/
+server/data/diagnostic.data/
+server/data/mongod.lock
+server/data/WiredTigerLog*

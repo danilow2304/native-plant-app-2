@@ -1,0 +1,8 @@
+.app { max-width: 1000px; margin: 0 auto; padding: 1rem; font-family: sans-serif; text-align: left; }
+.search { width: 100%; padding: 0.6rem; margin-bottom: 1rem; box-sizing: border-box; }
+.plant-form { display: grid; gap: 0.4rem; margin-bottom: 1.5rem; }
+.plant-form input { padding: 0.4rem; }
+.plant-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.plant-card { border: 1px solid #ccc; border-radius: 8px; padding: 1rem; }
+.plant-card button { margin-right: 0.5rem; }
+.error { color: crimson; }
