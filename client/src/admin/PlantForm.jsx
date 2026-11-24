@@ -20,7 +20,7 @@ export default function PlantForm() {
   useEffect(() => {
     if (!editing) return;
     getPlant(id)
-      .then((p) => setForm({ ...EMPTY, ...Object.fromEntries(Object.keys(EMPTY).map((k) => [k, p[k] ?? ''])) }))
+      .then((p) => setForm(Object.fromEntries(Object.keys(EMPTY).map((k) => [k, p[k] ?? '']))))
       .catch((err) => setErrors([err.message]));
   }, [id, editing]);
 

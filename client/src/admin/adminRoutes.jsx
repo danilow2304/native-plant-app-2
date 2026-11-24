@@ -1,9 +1,5 @@
-// In your existing App.jsx (inside <BrowserRouter><Routes>), add:
-//
-//   import { adminRoutes } from './admin/adminRoutes';
-//   ...
-//   {adminRoutes}
-//
+// In App.jsx:  import { adminRoutes } from './admin/adminRoutes';
+// then put  {adminRoutes}  inside <Routes> ... </Routes>
 import { Route } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';
 import AdminLogin from './AdminLogin';

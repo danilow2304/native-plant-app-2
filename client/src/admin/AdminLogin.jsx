@@ -30,11 +30,11 @@ export default function AdminLogin() {
     <main style={{ maxWidth: 360, margin: '4rem auto' }}>
       <h1>Admin Login</h1>
       <form onSubmit={handleSubmit}>
-        <label>Username
-          <input value={username} onChange={(e) => setUsername(e.target.value)} autoComplete="username" required maxLength={50} />
+        <label style={{ display: 'block', marginBottom: 8 }}>Username
+          <input value={username} onChange={(e) => setUsername(e.target.value)} autoComplete="username" required maxLength={50} style={{ display: 'block', width: '100%' }} />
         </label>
-        <label>Password
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" required />
+        <label style={{ display: 'block', marginBottom: 8 }}>Password
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" required style={{ display: 'block', width: '100%' }} />
         </label>
         {error && <p role="alert" style={{ color: 'crimson' }}>{error}</p>}
         <button type="submit" disabled={busy}>{busy ? 'Signing in…' : 'Log in'}</button>

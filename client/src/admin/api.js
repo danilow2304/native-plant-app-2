@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
 export const getToken = () => sessionStorage.getItem('adminToken');
 export const setToken = (t) => sessionStorage.setItem('adminToken', t);
